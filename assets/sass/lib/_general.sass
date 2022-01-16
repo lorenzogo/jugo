@@ -1,0 +1,158 @@
+//----ESTILOS GENERALES-----
+
+*
+    // border: 1px solid red
+
+body
+    font-size: 16px
+    background-color: #9189F1
+    height: inherit
+    
+    
+     
+main
+    display: block
+    width: $desktop
+    background-color: white
+    margin: auto
+    @media screen and (max-width: $tablet)
+        width: $tablet 
+    @media screen and (max-width: $movil)
+        width: $movil
+
+    
+
+   
+
+header
+    display: flex
+    justify-content: space-between
+    height: 170px
+    margin: 0 1em 
+    padding: 1em 0
+    @media screen and (max-width: $tablet)
+        height: 160px
+    @media screen and (max-width: $movil)
+        height: 150px
+    
+   
+//home
+
+.corporativo
+    display: flex
+    width: 50%
+    align-items: flex-start
+    padding-top: 0.5em
+    @media screen and (max-width: $movil)
+        width: 70%
+        
+.logo
+    height: 100%
+
+
+
+.contenidos
+    height: auto
+    display: flex
+    flex-wrap: wrap
+    margin: 0.5em
+    justify-content: flex-start
+    @media screen and (max-width: $movil)
+        justify-content: space-between
+        width: $cel_extra
+        
+       
+    
+
+//menu
+ul
+    position: relative
+
+
+    
+.menu
+    height: 100%
+    width: 20%
+    padding-left: 0
+    @media screen and (max-width: $movil)
+        position: absolute
+        z-index: 2
+        background-color: black
+        border-radius: 15px
+        padding: 6px
+        width: 330px
+        height: fit-content
+        right: 32px
+        top: 160px
+
+.ocultar
+    @media screen and (max-width: $movil)
+        display: none
+
+
+.redes
+    display: flex
+    justify-content: flex-end
+    margin-right: 0px
+    @media screen and (max-width: $movil)
+        display: none
+
+.pastilla
+    height: auto
+    width: fit-content
+    border-radius: 30px
+    padding: 0.2em 0
+    margin: 0.4em
+    @media screen and (max-width: $movil)
+        width: 95%
+        padding: 0.8em 1.2em
+        margin: 0.8em 0.4em
+        text-align: center
+
+.pulsar
+    padding: 3px 18px
+    border-radius: 10px
+    @media screen and (max-width: $movil)
+        padding: 14px 95px
+
+
+.hamburger_menu
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    height: 30px
+    width: 40px
+    margin: 0.5em 16px 5px 5px
+    @media screen and (max-width: $movil)
+        display: flex
+
+
+.tira_h
+    height: 8px
+    width: 100%
+    border-radius: $radio
+    
+
+.fondo_ayo
+    background-color: $ayo
+
+.fondo_azul
+    background-color: $azul
+
+.fondo_rojo
+    background-color: $rojo
+
+.fondo_verde
+    background-color: $verde
+
+.icon
+    height: 30px
+    padding: 0.2em 0.2em
+  
+
+footer
+    margin-left: 1.4em
+    padding-bottom: 2em
+    font-size: 0.8em
+    @media screen and (max-width: $movil)
+        width: $cel_extra

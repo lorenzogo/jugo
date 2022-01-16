@@ -1,0 +1,138 @@
+//modulos home
+
+.modulo
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    height: 200px
+    border-radius: $radio
+    margin: 0.5em
+    padding: 0.5em
+    background-size: cover
+    @media screen and (max-width: $tablet)
+        margin: 0.4em
+    @media screen and (max-width: $movil)
+        height: 180px
+        margin: 0.3em
+        padding: 0.5em
+
+
+//modulos longitud
+
+.extra
+    width: $extra
+    @media screen and (max-width: $tablet)
+        width: $cel_extra
+    
+    @media screen and (max-width: $movil)
+        width: $cel_extra
+        
+.largo
+    width: $largo
+    @media screen and (max-width: $tablet)
+        width: $cel_largo
+    @media screen and (max-width: $movil)
+        width: $cel_corto
+.medio
+    width: $medio
+    @media screen and (max-width: $movil)
+        width: $cel_corto
+.corto
+    width: $corto
+    @media screen and (max-width: $movil)
+        width: $cel_corto
+
+.estrecho
+    width: $estrecho
+    @media screen and (max-width: $movil)
+        width: $cel_corto
+
+.ajuste_cel
+    @media screen and (max-width: $movil)
+        width: $cel_corto
+
+
+//modulos margen derecho
+
+.margen_estrecho
+    padding-right: $pad_estrecho
+
+.margen_medio
+    padding-right: $pad_medio
+
+.margen_ancho
+    padding-right: $pad_ancho
+    @media screen and (max-width: $movil)
+        padding-right: $pad_estrecho
+    
+
+//modulos color letra
+
+.negro
+    color: $negro
+
+.blanco
+    color: $blanco
+
+.azul
+    color: $azul
+        
+
+
+//contenidos modulos
+
+.mod-1
+    background-image: url("../images/jugar_sin.jpg")
+    background-color: yellow 
+    @media screen and (max-width: $tablet)
+        background-position: right
+    
+
+.mod-2
+    background-image: url("../images/suscribe.jpg")
+    @media screen and (max-width: $movil)
+        background-position: center
+
+    
+
+.mod-3
+    background-image: url("../images/base_secreta.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+
+.mod-4
+    background-image: url("../images/decora_01.svg")
+    background-size: contain
+    background-repeat: no-repeat
+    @media screen and (max-width: $movil)
+        background-position: right
+
+.mod-5
+    background-image: url("../images/publicidad.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+    
+.mod-6
+    background-image: url("../images/ocho.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+
+.mod-7
+    background-image: url("../images/mikado.jpg")
+
+.mod-8
+    background-image: url("../images/comer.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+
+
+.mod-9
+    background-image: url("../images/palitos.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+
+.mod-10
+    background-image: url("../images/mas_madera.jpg")
+    @media screen and (max-width: $movil)
+        background-position: right
+

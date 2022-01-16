@@ -1,0 +1,91 @@
+//ESTILOS PARA ARTICULO
+
+//generales
+
+.contenidos_rejilla
+    height: auto
+    margin: 01em
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+
+.articulo
+    grid-column: 1/5
+    @media screen and (max-width: $movil)
+        grid-column: 1/7
+        border-bottom: 2px solid $rojo
+        margin-bottom: 1em
+        
+
+.lateral
+    grid-column: 5/7
+    padding-left: 1.5em
+    @media screen and (max-width: $movil)
+        grid-column: 1/7
+        padding-left: 0
+        display: flex
+        flex-wrap: wrap
+
+.corte
+    background-color: white
+    display: flex
+    align-content: space-between
+    width: 100%
+    margin: 2em 0 2em 0
+    @media screen and (max-width: $movil)
+        margin: 1em 0 1em 0 
+        flex-direction: column
+
+.corte_para_textos
+    padding: 0 1em
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media screen and (max-width: $movil)
+        padding: 0
+
+.desordena
+    @media screen and (max-width: $movil)
+        order: -1
+        padding-bottom: 1em
+
+
+
+
+//elementos
+
+.titulo_seccion
+    background-color: $azul
+    color: $blanco
+    margin: 0.5em 0 1em 0.5em
+    padding: 1em
+    border-radius: $radio
+    width: 100%
+    @media screen and (max-width: $movil)
+        margin: 0.5em 0 1em 0
+
+.titulo_articulo
+    margin-left: 0.5em
+    padding-bottom: 0.5em
+    @media screen and (max-width: $movil)
+        margin-left: 0.2em    
+
+.ilustracion
+    margin-left: 1em
+    width: 100%
+    border-radius: $radio
+    object-fit: cover
+    @media screen and (max-width: $movil)
+        margin: 0 1em 1em 0
+
+.negrita
+    font-weight: 600
+
+.parrafo
+    margin-left: 1em
+    margin-bottom: 1em
+    width: 95%
+    @media screen and (max-width: $movil)
+        margin-left: 0.5em    
+
+
+
