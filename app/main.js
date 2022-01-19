@@ -6,7 +6,7 @@
 let datos;
 
 let mostrarDetalle = (e) => {
-    window.open(`../pages/articulo.html?id=${e.currentTarget.id}`,'_self');
+    window.open(`pages/articulo.html?id=${e.currentTarget.id}`,'_self');
 }
 
 let publicidad = (e) => {
@@ -14,7 +14,7 @@ let publicidad = (e) => {
 }
 
 let ilustra = (e) => {
-    window.open(`../index.html`,'_self');
+    window.open(`index.html`,'_self');
 }
 
 
